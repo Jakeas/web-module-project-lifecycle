@@ -7,10 +7,14 @@ class Follower extends React.Component {
             <div>
             {this.props.followerDetails.map((detail) => {
                return (
-               <div> 
-                   <h2>{detail.login}
-                   </h2> 
-                    <img src={detail.avatar_url} alt="follower profile"/>
+               <div className="followContainer"> 
+                    <div className="username">
+                        <h3>{detail.login}
+                        </h3>
+                    </div>
+                    <div className="imgContainer">
+                        <img width="300px" src={detail.avatar_url} alt="follower profile"/>
+                    </div>
                </div>
             )
             })}

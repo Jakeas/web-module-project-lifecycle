@@ -11,10 +11,12 @@ class User extends React.Component {
                     <h2>{userDetail.name}
                     </h2>
                     <img src={userDetail.avatar_url} alt="user profile"/>
-                    <p>GitHub Username: {userDetail.login}</p>
-                    <p>Location: {userDetail.location}</p>
-                    <p>Following: {userDetail.following}</p>
-                    <p>Followers: {userDetail.followers}</p>
+                    <div className="pTag">
+                        <p>GitHub Username: {userDetail.login}</p>
+                        <p>Location: {userDetail.location}</p>
+                        <p>Following: {userDetail.following}</p>
+                        <p>Followers: {userDetail.followers}</p>
+                    </div>
                  </div>
             )
             })}
